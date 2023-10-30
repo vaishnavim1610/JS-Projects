@@ -46,8 +46,14 @@ $(".btn").click(function () {
     console.log("looser");
     // userClicked = [];
     // $(document).fadeOut(100).fadeIn(100);
+    $("body").addClass("game-over");
+    setTimeout(function () {
+      $("body").removeClass("game-over");
+    }, 200);
     $("h1").text("Game Over!!!  Press Any key to Restart");
-    restartCase();
+    var wrong=new Audio("./sounds/wrong.mp3");
+    wrong.play()
+    startOver();
   }
 });
 
@@ -62,9 +68,10 @@ function winningCase() {
     return false;
   }
 }
-function restartCase() {
+function startOver() {
   level = 0;
   started = false;
+  gamePattern = [];
 }
 
 function myFunction(randomChosenColour) {
