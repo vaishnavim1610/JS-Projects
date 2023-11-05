@@ -1,28 +1,27 @@
 body {
   background-color: #bae1ff;
 }
-.container{
-    padding-top: 10%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+.container {
+  padding-top: 10%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .row {
   height: 50%;
   width: 50%;
-  /* background-color: rgb(228, 240, 240); */
-  /* border: 1px solid black; */
 }
 .input {
-  width: 500px;
-  height: 100%;
+  width: 480px;
+  height: 40px;
   border: none;
 }
-.btn1{
-    background-color:rgb(69, 161, 236);
-    border: none;
-    
+.btn1 {
+  background-color: rgb(69, 161, 236);
+  border: none;
+  width: 70%;
+  height: 40px;
 }
-.input:hover{
-    border: 1px solid #bae1ff;
+.input:hover {
+  border: 1px solid #bae1ff;
 }
